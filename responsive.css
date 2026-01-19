@@ -1,0 +1,150 @@
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px 40px;
+    transition: right 0.4s ease;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .contact-btn {
+    align-self: flex-end;
+  }
+
+  .hero-content h1 {
+    font-size: 10vw;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+  .custom-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 15px; */
+    /* padding: 30px 15px; */
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+
+  .card-2 {
+    grid-column: span 2;
+  }
+
+  .card-3 {
+    grid-column: span 2;
+    min-height: 250px;
+  }
+  .card-style {
+ display: flex;
+ justify-content: center;
+
+
+}
+ .works-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    margin-top: -40px;
+  }
+
+  .logo strong {
+    font-size: 16px;
+  }
+
+  .logo small {
+    font-size: 10px;
+  }
+.cta-btn {
+    font-size: 11.6px;
+    padding: 8px 16px;
+    letter-spacing: 2px;
+  }
+
+  
+
+  .hero-content h1 {
+    font-size: 15vw;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+   .custom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card-2 {
+    grid-column: span 1;
+  }
+
+  .card-3 {
+    grid-column: span 1;
+    min-height: 200px;
+  }
+ .card-style {
+ display: none;
+ justify-content: center;
+
+
+}
+    .works-grid {
+    grid-template-columns: 1fr;
+  }
+.recent-header{
+    display: flex;
+flex-direction: column;
+    text-align: center;
+}
+.work-card {
+  height: 400px;
+    max-width: 240px;   /* important for scrolling */
+ 
+}
+}
