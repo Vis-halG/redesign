@@ -78,7 +78,7 @@
 
 @media (max-width: 480px) {
   .navbar {
-    margin-top: -40px;
+    /* margin-top: -40px; */
   }
 
   .logo strong {
