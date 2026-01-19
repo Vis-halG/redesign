@@ -123,7 +123,6 @@
   color: #000;
 }
 
-/* Underline animation */
 .nav-links li::after {
   content: "";
   position: absolute;
@@ -137,7 +136,6 @@
   transform-origin: left;
 }
 
-/* Active underline */
 .nav-links li.active::after {
   transform: scaleX(1);
 }

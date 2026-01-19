@@ -1,4 +1,4 @@
-// Fast & Lightweight Testimonial Carousel
+
 const testimonials = [
  {
   name: "Ankit Joshi",
@@ -44,7 +44,6 @@ const testimonials = [
 }
 ];
 
-// Cache DOM elements once
 const els = {
   avatars: document.querySelectorAll(".profile-avatar"),
   name: document.querySelector(".testimonial-name"),
@@ -60,7 +59,6 @@ let timer = null;
 let transitioning = false;
 let autoPlayEnabled = true;
 
-// Fast update without transitions
 function update(i, animate = true) {
   if (transitioning || !testimonials[i]) return;
   
@@ -68,7 +66,6 @@ function update(i, animate = true) {
   
   if (animate) {
     transitioning = true;
-    // Quick fade with CSS
     els.name.style.opacity = els.role.style.opacity = 
     els.text.style.opacity = els.emojis.style.opacity = "0";
     
@@ -77,7 +74,7 @@ function update(i, animate = true) {
       els.name.style.opacity = els.role.style.opacity = 
       els.text.style.opacity = els.emojis.style.opacity = "1";
       transitioning = false;
-    }, 150); // Reduced from 300ms
+    }, 150); 
   } else {
     setContent(t, i);
   }
@@ -90,7 +87,6 @@ function setContent(t, i) {
   els.emojis.innerHTML = (t.emoji1 ? `<span>${t.emoji1}</span>` : '') + 
                          (t.emoji2 ? `<span>${t.emoji2}</span>` : '');
   
-  // Update active states efficiently
   els.avatars[idx]?.classList.remove("active");
   els.dots[idx]?.classList.remove("active");
   els.avatars[i]?.classList.add("active");
@@ -109,7 +105,6 @@ function restart() {
   start();
 }
 
-// Event delegation for better performance
 function handleClick(e) {
   const avatar = e.target.closest(".profile-avatar");
   const dot = e.target.closest(".nav-dot");
@@ -118,51 +113,45 @@ function handleClick(e) {
     const i = Array.from(els.avatars).indexOf(avatar);
     if (i !== -1 && i !== idx) {
       update(i);
-      autoPlayEnabled = false; // Stop autoplay permanently
+      autoPlayEnabled = false;
       clearInterval(timer);
     }
   } else if (dot) {
     const i = Array.from(els.dots).indexOf(dot);
     if (i !== -1 && i !== idx) {
       update(i);
-      autoPlayEnabled = false; // Stop autoplay permanently
+      autoPlayEnabled = false; 
       clearInterval(timer);
     }
   }
 }
 
-// Setup - minimal transitions
 els.name.style.transition = els.role.style.transition = 
 els.text.style.transition = els.emojis.style.transition = "opacity 150ms ease";
 
-// Single event listener using delegation
 document.addEventListener("click", handleClick);
 
-// Hover pause
 els.container?.addEventListener("mouseenter", () => clearInterval(timer));
 els.container?.addEventListener("mouseleave", start);
 
-// Keyboard support
 document.addEventListener("keydown", (e) => {
   if (e.target.closest(".testimonial-container")) {
     if (e.key === "ArrowLeft") {
       e.preventDefault();
       const prev = (idx - 1 + testimonials.length) % testimonials.length;
       update(prev);
-      autoPlayEnabled = false; // Stop autoplay on keyboard interaction
+      autoPlayEnabled = false; 
       clearInterval(timer);
     } else if (e.key === "ArrowRight") {
       e.preventDefault();
       update((idx + 1) % testimonials.length);
-      autoPlayEnabled = false; // Stop autoplay on keyboard interaction
+      autoPlayEnabled = false;
       clearInterval(timer);
     }
   }
 });
 
-// Initialize
 update(0, false);
 start();
 
-// Cleanup
 window.addEventListener("beforeunload", () => clearInterval(timer));

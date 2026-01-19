@@ -2,434 +2,195 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="nav.css" />
-    <link rel="stylesheet" href="style.css" />
-   
-    <link rel="stylesheet" href="responsive.css" />
-    <link rel="stylesheet" href="footer.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="footer.css" />
+
+  <title>Document</title>
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">
-            <img src="images/saffiretech_logo-optimized.png" alt="SaffireTech" />
-        </div>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/saffiretech_logo-optimized.png" alt="SaffireTech" />
+    </div>
 
-        <div class="menu-toggle" id="menuToggle">☰</div>
+    <div class="menu-toggle" id="menuToggle">☰</div>
 
-        <ul class="nav-links" id="navLinks">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#services">Services</a></li>
-          
-            <li><a href="#case-studies">Case Studies</a></li>
-             <li><a href="#blog">Blog</a></li>
-              <li><a href="#">Products</a></li>
-           
-            <li>
-                <button class="contact-btn">Contact</button>
-            </li>
-        </ul>
+    <ul class="nav-links" id="navLinks">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#case-studies">Case Studies</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#">Products</a></li>
+      <li><button class="contact-btn">Contact</button></li>
+    </ul>
 
-        <div class="nav-right">
-            <div class="cart">🛒 <span class="badge">0</span></div>
-            <span class="login">Login</span>
-        </div>
-    </nav>
+    <div class="nav-right">
+      <div class="cart">🛒 <span class="badge">0</span></div>
+      <span class="login">Login</span>
+    </div>
+  </nav>
 
-    <div class="overlay" id="overlay"></div>
+  <div class="overlay" id="overlay"></div>
 
-    <section class="hero" id="home">
-        <div class="hero-img">
-            <img src="images/pexels-fauxels-3184339.jpg" alt="" />
+  <section class="hero" id="home">
+    <div class="hero-img">
+      <img src="images/pexels-fauxels-3184339.jpg" alt="" />
 
-            <div class="hero-content">
-                <p>Get Premium Solutions Tailored to Your Business Needs</p>
-                <h1>Top Quality WordPress Solutions</h1>
-                <button class="cta-btn">Elevate Your Business Now →</button>
-            </div>
-        </div>
+      <div class="hero-content">
+        <p>Get Premium Solutions Tailored to Your Business Needs</p>
+        <h1>Top Quality WordPress Solutions</h1>
+        <button class="cta-btn">Elevate Your Business Now →</button>
+      </div>
+    </div>
 
-        <h4 class="get-in-touch">Get In Touch</h4>
+    <h4 class="get-in-touch">Get In Touch</h4>
 
-       <div class="trusted-us">
-    <div>
+    <div class="trusted-us">
+      <div>
         <h2 class="counter" data-target="55">0+</h2>
         <h5>Plugins Developed</h5>
-    </div>
+      </div>
 
-    <div>
+      <div>
         <h2 class="counter" data-target="181">0+</h2>
         <h5>Projects Completed</h5>
-    </div>
+      </div>
 
-    <div>
+      <div>
         <h2 class="counter" data-target="9">0+</h2>
         <h5>Years in Business</h5>
+      </div>
     </div>
-</div>
+  </section>
 
-    </section>
+  <section class="custom-grid" id="services">
+    <div class="card card-2">
+      <h1>Our Services</h1>
+      <p>
+        Travara is your go-to travel management partner — from curated trips to end-to-end planning across the globe.
+        Our team ensures each journey is smooth, meaningful, and completely personalized.
+      </p>
+    </div>
 
-    <section class="custom-grid" id="services">
-        <div class="card card-2">
-            <h1>Our Services</h1>
-            <p>
-                Travara is your go-to travel management partner — from curated trips to end-to-end planning across the globe.
-                Our team ensures each journey is smooth, meaningful, and completely personalized.
-            </p>
+    <div class="card">
+      <h2>WooCommerce Development</h2>
+      <p>
+        Want an eCommerce solution to start selling your physical or digital products online? We can help you
+        kick-start your online business with our custom WooCommerce development services.
+      </p>
+      <button class="cta-btn">Learn More →</button>
+    </div>
+
+    <div class="card">
+      <h2>LearnDash Development</h2>
+      <p>
+        Are you looking for an employment training solution or selling courses online? We can customize various
+        aspects of LearnDash to create a perfect eLearning solution tailored to your needs.
+      </p>
+      <button class="cta-btn">Learn More →</button>
+    </div>
+
+    <div class="card card-3"></div>
+
+    <div class="card">
+      <h2>WordPress Plugin Development</h2>
+      <p>
+        Want to customize a WordPress plugin or need a custom functionality to be added to your WordPress
+        website? Our team of WordPress experts can develop custom solutions tailored to your needs.
+      </p>
+      <button class="cta-btn">Learn More →</button>
+    </div>
+
+    <div class="card-style">
+      <button class="cta-btn">← View More →</button>
+    </div>
+  </section>
+
+  <section class="recent-works" id="case-studies">
+    <div class="recent-header">
+      <h1>Our Recent Works</h1>
+
+      <div class="slider-controls">
+        <button id="prevBtn">←</button>
+        <button id="nextBtn">→</button>
+      </div>
+    </div>
+
+    <div class="works-grid">
+      <div class="work-card work1">
+        <div class="work-overlay"></div>
+        <div class="work-content">
+          <p>LearnDash Groups Plus Customization - Helping Group Leaders Manage Groups from the Frontend</p>
+          <button class="cta-btn">View Project →</button>
         </div>
+      </div>
 
-        <div class="card">
-            <h2>WooCommerce Development</h2>
-            <p>
-                Want an eCommerce solution to start selling your physical or digital products online? We can help you
-                kick-start your online business with our custom WooCommerce development services.
-            </p>
-            <button class="cta-btn">Learn More →</button>
+      <div class="work-card work2">
+        <div class="work-overlay"></div>
+        <div class="work-content">
+          <p>Customized LearnDash Reporting: Tailored Group and Individual Performance Insights</p>
+          <button class="cta-btn">View Project →</button>
         </div>
+      </div>
 
-        <div class="card">
-            <h2>LearnDash Development</h2>
-            <p>
-                Are you looking for an employment training solution or selling courses online? We can customize various
-                aspects of LearnDash to create a perfect eLearning solution tailored to your needs.
-            </p>
-            <button class="cta-btn">Learn More →</button>
+      <div class="work-card work3">
+        <div class="work-overlay"></div>
+        <div class="work-content">
+          <p>Product Configurator with Multiple Options Selection using WooCommerce</p>
+          <button class="cta-btn">View Project →</button>
         </div>
+      </div>
 
-        <div class="card card-3"></div>
-
-        <div class="card">
-            <h2>WordPress Plugin Development</h2>
-            <p>
-                Want to customize a WordPress plugin or need a custom functionality to be added to your WordPress
-                website? Our team of WordPress experts can develop custom solutions tailored to your needs.
-            </p>
-            <button class="cta-btn">Learn More →</button>
+      <div class="work-card work4">
+        <div class="work-overlay"></div>
+        <div class="work-content">
+          <p>Custom WordPress Approval Workflow for Samsung India WordPress Approval</p>
+          <button class="cta-btn">View Project →</button>
         </div>
-        <div class="card-style">
-            <button class="cta-btn"> ← View More → </button>
-        </div>
-        
-    </section>
+      </div>
+    </div>
+  </section>
 
-   
+  <script>
+    const counters = document.querySelectorAll(".counter");
 
-    <section class="recent-works" id="case-studies">
-        <div class="recent-header">
-            <div>
-                <h1>Our Recent Works</h1>
-                
-            </div>
+    counters.forEach(counter => {
+      const target = +counter.getAttribute("data-target");
+      let count = 0;
 
-            <div>
-              
+      const updateCounter = () => {
+        const increment = target / 120;
 
-                <div class="slider-controls">
-                    <button id="prevBtn"> ← </button>
-                    <button id="nextBtn"> → </button>
-                </div>
-            </div>
-        </div>
+        if (count < target) {
+          count += increment;
 
-        <div class="works-grid">
-            <div class="work-card work1">
-                <div class="work-overlay"></div>
-                <div class="work-content">
-                    <p>LearnDash Groups Plus Customization - Helping Group Leaders Manage Groups from the Frontend</p>
-                    <button class="cta-btn">View Project →</button>
-                </div>
-            </div>
+          let displayValue = Math.floor(count);
 
-            <div class="work-card work2">
-                <div class="work-overlay"></div>
-                <div class="work-content">
-                    <p>Customized LearnDash Reporting: Tailored Group and Individual Performance Insights</p>
-                    <button class="cta-btn">View Project →</button>
-                </div>
-            </div>
+          if (target < 10 && displayValue < 10) {
+            displayValue = "0" + displayValue;
+          }
 
-            <div class="work-card work3">
-                <div class="work-overlay"></div>
-                <div class="work-content">
-                    <p>Product Configurator with Multiple Options Selection using WooCommerce</p>
-                    <button class="cta-btn">View Project →</button>
-                </div>
-            </div>
+          counter.innerText = displayValue + "+";
+          setTimeout(updateCounter, 30);
+        } else {
+          let finalValue = target < 10 ? "0" + target : target;
+          counter.innerText = finalValue + "+";
+        }
+      };
 
-            <div class="work-card work4">
-                <div class="work-overlay"></div>
-                <div class="work-content">
-                    <p>Custom WordPress Approval Workflow for Samsung India WordPress Approval</p>
-                    <button class="cta-btn">View Project →</button>
-                </div>
-            </div>
+      updateCounter();
+    });
+  </script>
 
-            <div class="work-card work5">
-                <div class="work-overlay"></div>
-                <div class="work-content">
-                    <p>Bloom Desk offers productivity solutions for teams. WooCommerce Measurement Price Calculator for a...</p>
-                    <button class="cta-btn">View Project →</button>
-                </div>
-            </div>
-
-            <div class="work-card work6">
-                <div class="work-overlay"></div>
-                <div class="work-content">
-                    <p>Custom WordPress Theme Development for IceCream Company Custom WordPress Theme</p>
-                    <button class="cta-btn">View Project →</button>
-                </div>
-            </div>
-             <div class="work-card work1">
-                <div class="work-overlay"></div>
-                <div class="work-content">
-                    <p>LearnDash Groups Plus Customization - Helping Group Leaders Manage Groups from the Frontend</p>
-                    <button class="cta-btn">View Project →</button>
-                </div>
-            </div>
-
-            <div class="work-card work2">
-                <div class="work-overlay"></div>
-                <div class="work-content">
-                    <p>Customized LearnDash Reporting: Tailored Group and Individual Performance Insights</p>
-                    <button class="cta-btn">View Project →</button>
-                </div>
-            </div>
-
-            <div class="work-card work3">
-                <div class="work-overlay"></div>
-                <div class="work-content">
-                    <p>Product Configurator with Multiple Options Selection using WooCommerce</p>
-                    <button class="cta-btn">View Project →</button>
-                </div>
-            </div>
-
-            <div class="work-card work4">
-                <div class="work-overlay"></div>
-                <div class="work-content">
-                    <p>Custom WordPress Approval Workflow for Samsung India WordPress Approval</p>
-                    <button class="cta-btn">View Project →</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-     <section class="brand-strip">
-       
-        <div class="brand-track">
-            <img src="images/bloom-desk-optimized.png" alt="" />
-            <img src="images/candidate-market-optimized.png" alt="" />
-            <img src="images/caper-in-the-box-logo-optimized.png" alt="" />
-            <img src="images/click-begin-lms-optimized.png" alt="" />
-            <img src="images/itz-showtime-optimized.png" alt="" />
-            <img src="images/livreal-logo-1-optimized.png" alt="" />
-            <img src="images/lynx-logo-optimized.png" alt="" />
-            <img src="images/nishtha-logo-optimized.png" alt="" />
-            <img src="images/roody-carter-optimized.png" alt="" />
-            <img src="images/samsung-logo-optimized.png" alt="" />
-            <img src="images/the-wise-pilot-optimized.png" alt="" />
-
-            <img src="images/bloom-desk-optimized.png" alt="" />
-            <img src="images/candidate-market-optimized.png" alt="" />
-            <img src="images/caper-in-the-box-logo-optimized.png" alt="" />
-            <img src="images/click-begin-lms-optimized.png" alt="" />
-            <img src="images/itz-showtime-optimized.png" alt="" />
-            <img src="images/livreal-logo-1-optimized.png" alt="" />
-            <img src="images/lynx-logo-optimized.png" alt="" />
-            <img src="images/nishtha-logo-optimized.png" alt="" />
-            <img src="images/roody-carter-optimized.png" alt="" />
-            <img src="images/samsung-logo-optimized.png" alt="" />
-            <img src="images/the-wise-pilot-optimized.png" alt="" />
-        </div>
-    </section>
-    <section class="trusted-section" id="blog">
-        <div class="feedback-section">
-            <h1 class="section-title">What Our Customers Are Saying</h1>
-
-            <div class="testimonial-container">
-                <div class="profile-grid">
-                    <img src="customer/customer1.jpg" class="profile-avatar active" alt="" />
-                    <img src="customer/customer2.jpg" class="profile-avatar" alt="" />
-                    <img src="customer/customer3.jpg" class="profile-avatar" alt="" />
-                    <img src="customer/customer4.jpg" class="profile-avatar" alt="" />
-                    <img src="customer/customer5.jpg" class="profile-avatar" alt="" />
-                    <img src="customer/customer6.jpg" class="profile-avatar" alt="" />
-                </div>
-
-                <div class="testimonial-content">
-                    <div class="testimonial-header">
-                        <div>
-                            <h2 class="testimonial-name">Bardia Adibi</h2>
-                            <p class="testimonial-role">Product designer @ BA studio</p>
-                        </div>
-
-                        <div class="emoji-icons">
-                            <span>😊</span>
-                            <span>💬</span>
-                        </div>
-                    </div>
-
-                    <hr />
-                    <br />
-
-                    <p class="testimonial-text">
-                        Using this platform has completely transformed how we approach product design. The intuitive interface and versatile features have allowed us to create an engaging user experience with ease, streamlining every step of the design process.
-                    </p>
-                </div>
-            </div>
-
-            <!-- <div class="testimonial-nav">
-                <div class="nav-dot"></div>
-                <div class="nav-dot active"></div>
-                <div class="nav-dot"></div>
-                <div class="nav-dot"></div>
-                <div class="nav-dot"></div>
-                <div class="nav-dot"></div>
-            </div> -->
-        </div>
-    </section>
-
-     <footer>
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>QUICK LINKS</h3>
-                <ul>
-                    <li><a href="#blog">Our Blog</a></li>
-                    <li><a href="#products">Our Products</a></li>
-                    <li><a href="#case-studies">Case Studies</a></li>
-                    <li><a href="#partner">Partner With Us</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>SERVICES</h3>
-                <ul>
-                    <li><a href="#woocommerce">WooCommerce Development</a></li>
-                    <li><a href="#learndash">LearnDash Development</a></li>
-                    <li><a href="#plugin">WP Plugin Development</a></li>
-                    <li><a href="#wordpress">WordPress Development</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>COMPANY</h3>
-                <ul>
-                    <li><a href="#support">Support</a></li>
-                    <li><a href="#account">My Account</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms & Conditions</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>CONTACT</h3>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
-                            <path d="M8 0C3.589 0 0 3.589 0 8c0 6 8 12 8 12s8-6 8-12c0-4.411-3.589-8-8-8zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" fill="currentColor"/>
-                        </svg>
-                        <span>C-103, Om Fortune, Jambli Gully, Borivali (W), Mumbai-400092, India</span>
-                    </div>
-                    <div class="contact-item">
-                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
-                            <path d="M8 0C3.589 0 0 3.589 0 8c0 6 8 12 8 12s8-6 8-12c0-4.411-3.589-8-8-8zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" fill="currentColor"/>
-                        </svg>
-                        <span>539 W. Commerce St #7579, Dallas, TX 75208, US</span>
-                    </div>
-                </div>
-                <div class="social-icons">
-                    <a href="#wordpress" aria-label="WordPress">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zM1.982 10c0-1.045.2-2.043.563-2.957l3.099 8.488A8.028 8.028 0 011.982 10zm8.018 8.018c-.787 0-1.545-.127-2.257-.362l2.398-6.966 2.457 6.731c.016.04.035.077.054.114a8.028 8.028 0 01-2.652.483zm1.123-11.864c.491-.026.934-.077.934-.077.44-.052.388-.699-.052-.674 0 0-1.321.103-2.174.103-.8 0-2.148-.103-2.148-.103-.44-.025-.491.648-.052.674 0 0 .414.051.851.077l1.264 3.464-1.775 5.321-2.953-8.785c.491-.026.934-.077.934-.077.44-.052.388-.699-.052-.674 0 0-1.321.103-2.174.103-.153 0-.333-.004-.524-.01A8.021 8.021 0 0110 1.982c2.126 0 4.062.825 5.508 2.17-.035-.002-.07-.006-.106-.006-.8 0-1.368.699-1.368 1.448 0 .673.388 1.244.8 1.918.31.543.673 1.244.673 2.254 0 .699-.268 1.51-.621 2.637l-.815 2.722-2.948-8.771zm5.886 1.512a7.99 7.99 0 01.509 2.752c0 2.801-1.433 5.265-3.607 6.7l2.216-6.405c.414-1.035.552-1.863.552-2.598 0-.267-.017-.515-.048-.749.506.915.807 1.968.807 3.089z"/>
-                        </svg>
-                    </a>
-                    <a href="#linkedin" aria-label="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M4.477 6.667h-3.81v12.666h3.81V6.667zM2.571 5.143c1.219 0 2.095-.905 2.095-2.071C4.666 1.905 3.79 1 2.571 1 1.352 1 .476 1.905.476 3.072c0 1.166.876 2.071 2.095 2.071zM19.524 19.333h-3.81v-6.166c0-1.471-.024-3.357-2.047-3.357-2.048 0-2.362 1.595-2.362 3.252v6.271h-3.81V6.667h3.657v1.729h.052c.509-.962 1.752-1.976 3.605-1.976 3.857 0 4.571 2.538 4.571 5.838v7.075h.144z"/>
-                        </svg>
-                    </a>
-                    <a href="#twitter" aria-label="Twitter">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M19.633 3.786a8.062 8.062 0 01-2.317.635 4.04 4.04 0 001.773-2.23 8.073 8.073 0 01-2.563.978 4.034 4.034 0 00-6.87 3.677A11.447 11.447 0 011.392 2.52a4.034 4.034 0 001.248 5.38 4.01 4.01 0 01-1.826-.504v.05a4.035 4.035 0 003.235 3.954 4.04 4.04 0 01-1.82.07 4.037 4.037 0 003.768 2.8 8.09 8.09 0 01-5.002 1.723c-.325 0-.646-.019-.962-.056a11.416 11.416 0 006.185 1.812c7.422 0 11.48-6.148 11.48-11.48 0-.175-.004-.35-.012-.523a8.2 8.2 0 002.011-2.09z"/>
-                        </svg>
-                    </a>
-                    <a href="#facebook" aria-label="Facebook">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"/>
-                        </svg>
-                    </a>
-                    <a href="#instagram" aria-label="Instagram">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zM10 0C7.284 0 6.944.012 5.878.06 2.246.227.228 2.242.06 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.773 2.247 17.755.228 14.123.06 13.056.01 12.716 0 10 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/>
-                        </svg>
-                    </a>
-                    <a href="#skype" aria-label="Skype">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10.05 0C4.477 0 0 4.477 0 10.05c0 1.773.466 3.436 1.278 4.878a7.025 7.025 0 00-.278 1.95c0 3.865 3.135 7 7 7 .678 0 1.333-.11 1.95-.278A9.995 9.995 0 0010.05 0zm.293 16.667c-2.865 0-5.343-1.667-5.343-3.667 0-.933.667-1.667 1.667-1.667 2 0 1.333 2.667 3.676 2.667.933 0 1.657-.467 1.657-1.2 0-.467-.267-.867-.867-1.067l-3.333-1.066c-2-.667-2.4-1.867-2.4-3.067 0-2.533 2.267-3.6 4.533-3.6 2.133 0 5 1.2 5 3 0 .933-.733 1.533-1.667 1.533-1.733 0-1.2-2.266-3.333-2.266-.8 0-1.467.4-1.467 1.066 0 .667.8.933 1.467 1.133l2.533.8c2 .667 2.733 1.933 2.733 3.4 0 2.4-2 3.933-4.856 3.933z"/>
-                        </svg>
-                    </a>
-                    <a href="#email" aria-label="Email">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M18 4H2C.9 4 0 4.9 0 6v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                        </svg>
-                    </a>
-                    <a href="#phone" aria-label="Phone">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M18 14.35c-1.16 0-2.3-.16-3.38-.47-.35-.1-.74-.03-1.01.24l-2.22 2.22c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.27.36-.66.25-1.01C6.94 5.37 6.78 4.23 6.78 3.07c0-.55-.45-1-1-1H2.04c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.72c0-.55-.45-1-1-1z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p class="copyright">© 2026 SaffireTech.</p>
-        </div>
-    </footer>
-
-<script>
-const counters = document.querySelectorAll(".counter");
-
-counters.forEach(counter => {
-  const target = +counter.getAttribute("data-target");
-  let count = 0;
-
-  const updateCounter = () => {
-    const increment = target / 120; // speed control (bada number = slow)
-
-    if (count < target) {
-      count += increment;
-
-      let displayValue = Math.floor(count);
-
-      // 09 format ke liye
-      if (target < 10 && displayValue < 10) {
-        displayValue = "0" + displayValue;
-      }
-
-      counter.innerText = displayValue + "+";
-      setTimeout(updateCounter, 30); // smooth delay
-    } else {
-      let finalValue = target < 10 ? "0" + target : target;
-      counter.innerText = finalValue + "+";
-    }
-  };
-
-  updateCounter();
-});
-</script>
-
-
-
-    <script src="script.js"></script>
-    <script src="review.js"></script>
+  <script src="script.js"></script>
+  <script src="review.js"></script>
 
 </body>
-
 </html>

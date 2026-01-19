@@ -30,7 +30,6 @@ navItems.forEach(link => {
 
     link.parentElement.classList.add("active");
 
-    // Mobile menu close on click
     navLinks.classList.remove("show");
     overlay.classList.remove("show");
     menuToggle.textContent = "☰";
@@ -42,7 +41,7 @@ const worksGrid = document.querySelector(".works-grid");
 const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
 
-const scrollAmount = 350; // how much to scroll
+const scrollAmount = 350; 
 
 nextBtn.addEventListener("click", () => {
   worksGrid.scrollLeft += scrollAmount;
