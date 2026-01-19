@@ -140,10 +140,11 @@
   margin: 2vw;
   /* margin-top: 10vw; */
   padding-top: 8vw;
+  /* align-items: center; */
 }
 
 .card {
-  background: #ecf5f4;
+   background: rgba(0, 167, 156, 0.128); 
   padding: 40px;
   font-size: 22px;
   border-radius: 12px;
@@ -163,6 +164,7 @@
 .card-2 {
   grid-column: span 2;
   background-color: #fff;
+  align-self: center;
 }
 
 .card-3 {
@@ -171,7 +173,18 @@
   background-position: center;
   grid-column: span 3;
   min-height: 300px;
+  position: relative;
+  overflow: hidden;
 }
+
+.card-3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 167, 157, 0.5); 
+  z-index: 1;
+}
+
 
 .card-style {
   display: none;
@@ -185,7 +198,7 @@
 }
 
 .recent-header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -249,7 +262,7 @@
 .work-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(34, 159, 138, 0.4);
+   background: rgba(0, 167, 157, 0.5); 
 }
 
 .work-content {
@@ -276,7 +289,7 @@
 .work6 { background-image: url("work/work6.png"); }
 
 .recent-header h1 {
-  font-size: 46px;
+  font-size: 3vw;
 }
 .brand-strip {
   text-align: center;
@@ -397,7 +410,7 @@
 
 .testimonial-content {
   max-width: 900px;
-  background-color: #4da09a1b;
+   background: rgba(0, 167, 156, 0.128); 
   padding: 35px;
   border-radius: 10px;
 }
