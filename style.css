@@ -272,6 +272,9 @@ margin: 2vw;
 .work-card {
   scroll-snap-align: start;
 }
+.works-grid::-webkit-scrollbar {
+  display: none;
+}
 
 
 
