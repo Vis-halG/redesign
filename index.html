@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
    
     <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="footer.css">
 
     <title>Document</title>
 </head>
@@ -22,11 +23,13 @@
         <div class="menu-toggle" id="menuToggle">☰</div>
 
         <ul class="nav-links" id="navLinks">
-            <li class="active">Home</li>
-            <li>Services</li>
-            <li>Products</li>
-            <li>Case Studies</li>
-            <li>Blog</li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+          
+            <li><a href="#case-studies">Case Studies</a></li>
+             <li><a href="#blog">Blog</a></li>
+              <li><a href="#">Products</a></li>
+           
             <li>
                 <button class="contact-btn">Contact</button>
             </li>
@@ -40,7 +43,7 @@
 
     <div class="overlay" id="overlay"></div>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-img">
             <img src="images/pexels-fauxels-3184339.jpg" alt="" />
 
@@ -72,7 +75,7 @@
 
     </section>
 
-    <section class="custom-grid">
+    <section class="custom-grid" id="services">
         <div class="card card-2">
             <h1>Our Services</h1>
             <p>
@@ -117,16 +120,15 @@
 
    
 
-    <section class="recent-works">
+    <section class="recent-works" id="case-studies">
         <div class="recent-header">
             <div>
-                <h2>Our Recent Works <button class="cta-btn">View All Case Studies →</button></h2>
-                <p>Some of the brands we’ve proudly worked with some of the brands we’ve proudly worked with !</p>
+                <h1>Our Recent Works</h1>
                 
             </div>
 
             <div>
-                
+              
 
                 <div class="slider-controls">
                     <button id="prevBtn"> ← </button>
@@ -219,6 +221,7 @@
 
 
      <section class="brand-strip">
+       
         <div class="brand-track">
             <img src="images/bloom-desk-optimized.png" alt="" />
             <img src="images/candidate-market-optimized.png" alt="" />
@@ -245,7 +248,7 @@
             <img src="images/the-wise-pilot-optimized.png" alt="" />
         </div>
     </section>
-    <section class="trusted-section">
+    <section class="trusted-section" id="blog">
         <div class="feedback-section">
             <h1 class="section-title">What Our Customers Are Saying</h1>
 

@@ -20,6 +20,24 @@ overlay.addEventListener("click", () => {
   menuToggle.textContent = "☰";
 });
 
+const navItems = document.querySelectorAll(".nav-links li a");
+
+navItems.forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelectorAll(".nav-links li").forEach(li => {
+      li.classList.remove("active");
+    });
+
+    link.parentElement.classList.add("active");
+
+    // Mobile menu close on click
+    navLinks.classList.remove("show");
+    overlay.classList.remove("show");
+    menuToggle.textContent = "☰";
+  });
+});
+
+
 const worksGrid = document.querySelector(".works-grid");
 const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
